@@ -1,9 +1,14 @@
-# scripty
-**Web Application for generating a script file based on the user specifications**
+# SCRIPTY
 
-**BACKEND:**
 
-**Django REST API Framework** is used as a backend which provides REST API endpoints.
+![images](https://user-images.githubusercontent.com/32727177/63958043-317aee80-caa7-11e9-91a2-d1198c0a6bcf.png)
+
+
+## Web Application for generating a script file based on the user specifications
+
+### BACKEND:
+
+Django REST API Framework is used as a backend which provides REST API endpoints.
 
 **To create a new app**
 >docker-compose run --rm app sh -c "python manage.py startapp <app_name>"
@@ -17,4 +22,4 @@
 **Spinup the Project:**
 >docker-compose up
 
-**Postgresql** is used as the Database.
+Postgresql is used as Database.
