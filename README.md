@@ -16,3 +16,5 @@
 
 **Spinup the Project:**
 >docker-compose up
+
+**Postgresql** is used as the Database.
