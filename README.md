@@ -43,7 +43,7 @@ Postgresql is used as Database.
       PAYLOAD
 
       {
-            "application_id" : "kubernetes",
+            "application_name" : "kubernetes",
             "application_dependency": "docker"
       }
    
