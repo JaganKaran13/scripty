@@ -18,3 +18,11 @@ class OperatingSystem(models.Model):
 
     def __str__(self):
         return self.os_name
+
+class Command(models.Model):
+    """Commands Models"""
+    command_id = models.AutoField(primary_key=True)
+    command_name = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.command_name

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Application, OperatingSystem
+from .models import Application, OperatingSystem, Command
 
 
 class ApplicationSerializer(serializers.ModelSerializer):
@@ -19,3 +19,12 @@ class OperatingSystemSerializer(serializers.ModelSerializer):
         model = OperatingSystem
         fields = ('os_id', 'os_name')
         read_only_fields = ('os_id',)
+
+
+class CommandSerializer(serializers.ModelSerializer):
+    """Serializer for command Model"""
+
+    class Meta:
+        model = Command
+        fields = ('command_id', 'command_name')
+        read_only_fields = ('command_id', )
