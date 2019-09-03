@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from application.serializers import ApplicationSerializer
-from application.models import Application
+from application.serializers import ApplicationSerializer, OperatingSystemSerializer
+from application.models import Application, OperatingSystem
 
 
 class ApplicationViewSet(viewsets.ModelViewSet):
@@ -10,4 +10,13 @@ class ApplicationViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         """Return the Application in the database"""
+        return self.queryset
+
+class OperatingSystemViewSet(viewsets.ModelViewSet):
+    """Manage OperatingSystem in Database"""
+    queryset = OperatingSystem.objects.all()
+    serializer_class = OperatingSystemSerializer
+
+    def get_queryset(self):
+        """Return the OperatingSystem in the database"""
         return self.queryset

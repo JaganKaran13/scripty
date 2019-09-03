@@ -9,3 +9,12 @@ class Application(models.Model):
 
     def __str__(self):
         return self.application_id
+
+
+class OperatingSystem(models.Model):
+    """Operating System Models"""
+    os_id = models.AutoField(primary_key=True)
+    os_name = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.os_name
