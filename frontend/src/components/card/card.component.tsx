@@ -40,10 +40,7 @@ export default function SimpleCard() {
         </Typography>
             <Typography className={classes.pos} color="textSecondary">
             </Typography>
-            <Typography variant="body2" component="p">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae dolores, mollitia repellendus nostrum reprehenderit facere ipsa? Esse, incidunt. Quibusdam voluptas quas earum, esse praesentium ipsam aperiam iure fugit. Labore, quaerat.
-          <br />
-            </Typography>
+            
           </CardContent>
         </Card>
       </Link>
