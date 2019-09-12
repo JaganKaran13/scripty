@@ -25,3 +25,33 @@ Django REST API Framework is used as a backend which provides REST API endpoints
       docker-compose up
 
 Postgresql is used as Database.
+
+### APPLICATION ENDPOINT
+
+>To retreive List of all the applications
+
+      http://localhost:8000/api/applications
+
+>To retreive particular application
+
+      http://localhost:8000/api/applications/<application_id>
+
+>Post a new application
+
+      http://localhost:8000/api/applications/
+
+      PAYLOAD
+
+      {
+            "application_name" : "kubernetes",
+            "application_dependency": "docker"
+      }
+   
+>Delete a application
+
+      http://localhost:8000/api/applications/<application_id>
+      
+ ### In order to use the API view (UI Interface for API Requests)
+ Enter the Below url in browser
+ 
+      http://localhost:8000/api/applications
