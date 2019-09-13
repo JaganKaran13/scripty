@@ -1,6 +1,4 @@
-# SCRIPTY
-
-![images](https://user-images.githubusercontent.com/32727177/63958844-97b44100-caa8-11e9-9e41-8efea889b1ac.png)
+![images](./images/SCRIPTY5.png)
 
 ## Web Application for generating a script file based on the user specifications
 
