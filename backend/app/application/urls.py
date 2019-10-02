@@ -1,16 +1,18 @@
 from django.urls import path, include
 from rest_framework.routers import SimpleRouter
 
-from application import views
+from .views import *
 
 
-router = SimpleRouter()
-router.register('applications', views.ApplicationViewSet)
-router.register('os',views.OperatingSystemViewSet)
-router.register('command',views.CommandViewSet)
+# router = SimpleRouter()
+# router.register('applications', application)
+# router.register('os', operating_system)
+# router.register('command', command)
 
 app_name = 'application'
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('application', application),
+    path('os', operating_system),
+    path('command', command)
 ]
