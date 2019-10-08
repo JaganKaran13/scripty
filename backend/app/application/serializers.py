@@ -1,3 +1,5 @@
+__author__ = "Jagan"
+
 from rest_framework import serializers
 from .models import Application, OperatingSystem, Command
 
