@@ -18,7 +18,10 @@ class ApplicationManager(models.Manager):
     
     def get_application(self, filter):
         try:
-            application = self.filter(application_name=filter)
+            if filter == 'all':
+                application = self.filter()
+            else:
+                application = self.filter(application_name=filter)
             result = list()
             for item in application:
                 data = dict(application_id=item.application_id, application_name=item.application_name,
@@ -40,7 +43,10 @@ class OperatingSystemManager(models.Manager):
     
     def get_operating_system(self, filter):
         try:
-            operating_system = self.filter(os_name=filter)
+            if filter == 'all':
+                operating_system = self.filter()
+            else:    
+                operating_system = self.filter(os_name=filter)
             result = list()
             for item in operating_system:
                 data = dict(os_id=item.os_id, os_name=item.os_name, super_user=item.super_user)
@@ -61,7 +67,10 @@ class CommandManager(models.Manager):
     
     def get_command(self, filter):
         try:
-            command = self.filter(command_name=filter).exclude(related_os=None)
+            if filter == 'all':
+                command = self.filter().exclude(related_os=None)
+            else:
+                command = self.filter(command_name=filter).exclude(related_os=None)
             result = list()
             for item in command:
                 data = dict(command_id=item.command_id, related_os=(item.related_os.os_name or ""), command_name=item.command_name, command=item.command)
