@@ -1,0 +1,19 @@
+.custom-select {
+    margin-top: 5px;
+    padding: 5px 10px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    width: 120px;
+    background: transparent;
+    border-radius: 1px;
+}
+.custom-select :select {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+.custom-select :focus {
+    outline: none;
+}

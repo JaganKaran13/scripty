@@ -1,0 +1,28 @@
+.footer {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  bottom: 0px;
+
+  .logo-container {
+    height: 100%;
+    width: 70px;
+    padding: 25px;
+    color: #00bcd4;
+    font-weight: bold;
+  }
+
+  .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .option {
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+  }
+}

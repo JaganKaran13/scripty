@@ -1,0 +1,45 @@
+.about-image {
+    background-image: url('../../assets/scripty-about.png'); 
+    padding: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: Auto 150px;
+    background-position: center;
+}
+
+.title {
+    font-size: 35px;
+    width: 70%;
+    margin-top: 20px;
+    color: #00BCD4;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 19px;
+    margin-bottom: 80px;
+}
+
+.steps {
+    margin-top: 30px;
+    width: 100%;
+    .step-one {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 30px 10px;
+    }
+    .step-two {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 30px 10px;
+    }
+    .step-number {
+        font-size: 40px;
+        margin-right: 10px;
+    }
+    .step-info {
+        font-size: 38px;
+    }
+}
