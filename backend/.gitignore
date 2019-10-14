@@ -102,3 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# migrations as it might differ in each user local
+/app/application/migrations/
